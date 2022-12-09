@@ -1,0 +1,19 @@
+{
+  "name": "notify_clock_out",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "volta": {
+    "node": "18.12.1",
+    "npm": "8.19.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.28.1"
+  },
+  "dependencies": {
+    "playwright": "^1.28.1"
+  }
+}
