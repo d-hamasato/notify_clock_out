@@ -95,11 +95,9 @@ const lineNotify = {
     }
   
     const clockedOutAt = await row.nth(4).innerText();
-    if (!clockedOutAt) {
-      console.log('退勤打刻ないじゃん');
+    if (clockedOutAt === '(勤務中)') {
       throw new NoClockingOutException(dateForTableSearch);
     } else {
-      // 勤務中の場合 "(勤務中)" の文字列が入る
       console.log(`${clockedOutAt}：に退勤してるね`);
     }
 
