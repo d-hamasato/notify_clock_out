@@ -54,11 +54,11 @@ vi .env
 node notifyClockOut.js
 ```
 
-4. 出勤日に `notifyClockOut.js` を実行し、退勤打刻（出勤打刻）をまだ行っていない場合、LINEに通知が来れば成功です🎉
+4. 出勤日の19時以降、退勤打刻をまだ行っていない状態で `notifyClockOut.js` を実行し、LINEに通知が来れば成功です🎉
 
 ---
 
-ただこれだと `notifyClockOut.js` をコマンドラインから手動実行しているだけなので、それぞれの環境にあった方法自動実行する必要があります。(crontab等)  
+ただこれだと `notifyClockOut.js` をコマンドラインから手動実行しているだけなので、それぞれの環境にあった方法で自動実行する必要があります。(crontab等)  
 
 macユーザーの場合、[hammerspoon](https://www.hammerspoon.org/) というアプリの利用がおすすめです。  
 （設定ファイルに luaというスクリプト言語で処理を記述することで、あらゆるmacのハードウィアイベントに対して任意の処理を自動実行することができます）  
